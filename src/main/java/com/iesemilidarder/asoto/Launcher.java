@@ -8,10 +8,8 @@ public class Launcher {
         try {
             SystemUtilHelper.consolePrint("TripAdvisor nuevo App 2.0");
             Pais pais = new Pais();
-            pais.setName = string("España", "Alemania", "Bahamas", "Brasil", "Bélgica");
+            pais.setName(new) = ("España", "Alemania", "Bahamas", "Brasil", "Bélgica");
             System.out.println("Pais:" + pais.getName());
-
-
             SystemUtilHelper.consolePrint("fin");
 
         } catch (
