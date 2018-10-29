@@ -25,12 +25,12 @@ public class Launcher {
             a.setPopulation(12000000);
             listaPaises.add(a);
             //listaPaises.add(new Pais("España"));
-            Pais e = new Pais("España"));
+            Pais e = new Pais("España");
             e.staPaises.add(e);
             e.setPopulation(47000000);
             listaPaises.add(e);
             //listaPaises.add(new Pais("Bahamas"));
-            Pais o = new Pais("Bahamas"));
+            Pais o = new Pais("Bahamas");
             o.staPaises.add(o);
             o.setPopulation(400000);
             listaPaises.add(o);

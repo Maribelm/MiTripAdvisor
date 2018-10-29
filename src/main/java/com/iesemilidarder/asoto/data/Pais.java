@@ -1,7 +1,10 @@
 package com.iesemilidarder.asoto.data;
 
+import java.util.List;
+
 public class Pais  {
 
+    public List<Pais> staPaises;
     private String name;
     private int population;
 

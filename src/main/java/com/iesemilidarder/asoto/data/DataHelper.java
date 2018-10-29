@@ -12,7 +12,7 @@ public class DataHelper {
     }
 
     public static void main(String[] args) {
-        String[] actividades = new String[]{"Montañismo,", "Monumentos,", "Esquí,", "Visitas a pueblos,", "Comer", "Dormir"};
+        String[] actividades = new String[]{"Montañismo,", "Monumentos,", "Esquí,", "Visitas a pueblos,", "Comer", "Hotel"};
         String[] tiposactividades = new String[]{"Cultura,", "Gatronomía,", "Senderismo", "Hotel"};
 
         String[] excursiones = new String[]{"GR211", "GR122", "GR666", "GR122"};
@@ -24,7 +24,7 @@ public class DataHelper {
         for (String excursion:excursiones){
             Excursion a = new Excursion();
             a.setName(excursion);
-            a.setPais(new Pais("Spain"));
+            a.setPais(new Pais("España"));
             products.add(a);
         }
 
