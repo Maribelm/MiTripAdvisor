@@ -1,4 +1,4 @@
 package com.iesemilidarder.asoto.data;
 
-public class Hoteles {
+public class Hotel  extends Product{
 }

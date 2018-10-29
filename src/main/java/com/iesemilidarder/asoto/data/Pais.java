@@ -1,6 +1,6 @@
 package com.iesemilidarder.asoto.data;
 
-public class Pais  /*extends Vuelos */ {
+public class Pais  {
 
     private String name;
     private int population;
