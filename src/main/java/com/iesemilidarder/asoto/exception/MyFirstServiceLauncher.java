@@ -1,4 +1,4 @@
-package com.iesemilidarder.asoto;
+package com.iesemilidarder.asoto.exception;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.iesemilidarder.asoto;
+package com.iesemilidarder.asoto.exception;
 
 public class SystemUtilHelper {
 
