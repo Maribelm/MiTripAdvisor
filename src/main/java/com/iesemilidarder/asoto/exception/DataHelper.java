@@ -37,7 +37,8 @@ public class DataHelper {
 
     }
 
-    public static void getData() {
+    public static List<Product> getData() {
+        return null;
     }
 
     public static void insert(Vuelo aux) {
