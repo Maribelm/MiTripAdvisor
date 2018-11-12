@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Controller {
     @RequestMapping("/Vuelos")
-    public Vuelo car(@RequestParam(value = "name", defaultValue = "no se encuentra") String name) {
+    public Vuelo Product(@RequestParam(value = "name", defaultValue = "no se encuentra") String name) {
         // Vuelo item = new Pais();
         //item.setName(name);
         //return item;
