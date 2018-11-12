@@ -2,7 +2,7 @@ package com.iesemilidarder.asoto.data;
 
 import java.util.List;
 
-public class Pais  {
+public class Pais extends Product {
 
     public List<Pais> staPaises;
     private String name;
@@ -10,6 +10,10 @@ public class Pais  {
 
     public Pais(String name){
         this.name = name;
+    }
+
+    public Pais() {
+
     }
 
     public String getName() {

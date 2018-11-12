@@ -1,12 +1,12 @@
 package com.iesemilidarder.asoto.controller;
 
-import com.iesemilidarder.asoto.data.Hotel;
-import com.iesemilidarder.asoto.data.Pais;
-import com.iesemilidarder.asoto.data.Product;
-import com.iesemilidarder.asoto.data.Vuelo;
+import com.iesemilidarder.asoto.data.*;
+import com.iesemilidarder.asoto.exception.DataHelper;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 @RestController
 public class Controller {
@@ -18,23 +18,35 @@ public class Controller {
         return null;
     }
 
-    @RequestMapping("/getProductType")
-    public Product Product(@RequestParam(value = "name", defaultValue = "no se encuentra") String name) {
-
-        return null;
+    @RequestMapping("/getAll")
+    public List<Product> getAll() {
+        return DataHelper.products;
     }
 
-    @RequestMapping("/getProduct/id")
-    public Product Product(@RequestParam(value = "name", defaultValue = "no se encuentra") String name) {
-
-        return null;
+    @RequestMapping("/excursion")
+    public Excursion getActivity(@RequestParam(value = "name", defaultValue = "World") String activityKind) {
+        Excursion excursion = new Excursion();
+        excursion.setName(activityKind);
+        DataHelper.products.add(excursion);
+        return excursion;
     }
 
-    @RequestMapping("/addProduct")
-    public Product Product(@RequestParam(value = "name", defaultValue = "no se encuentra") String name) {
-
-        return null;
+    @RequestMapping("/pais")
+    public Pais getActivity(@RequestParam(value = "name", defaultValue = "World") String activityKind) {
+        Pais pais = new Pais();
+        pais.setName(activityKind);
+        DataHelper.products.add(pais);
+        return pais;
     }
+
+    @RequestMapping("/pais")
+    public Hotel getActivity(@RequestParam(value = "name", defaultValue = "World") String activityKind) {
+        Hotel hotel = new Hotel();
+        hotel.setName(activityKind);
+        DataHelper.products.add(hotel);
+        return pais;
+    }
+
 }
 
 
