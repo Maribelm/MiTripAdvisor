@@ -32,9 +32,9 @@ public class Controller {
     }
 
     @RequestMapping("/pais")
-    public Pais getActivity(@RequestParam(value = "name", defaultValue = "World") String activityKind) {
+    public Pais getActivity(@RequestParam(value = "name", defaultValue = "World") String paisv) {
         Pais pais = new Pais();
-        pais.setName(activityKind);
+        pais.setName(paisv);
         DataHelper.products.add(pais);
         return pais;
     }
