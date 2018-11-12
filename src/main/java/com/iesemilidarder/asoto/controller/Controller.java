@@ -44,7 +44,7 @@ public class Controller {
         Hotel hotel = new Hotel();
         hotel.setName(activityKind);
         DataHelper.products.add(hotel);
-        return pais;
+        return hotel;
     }
 
 }
